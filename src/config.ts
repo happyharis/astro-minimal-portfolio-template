@@ -9,9 +9,9 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Tim Witzdam",
-  logo: "/logo.webp",
-  email: "tim@witzdam.com",
+  name: "Haris Samingan",
+  logo: "/my-face.png",
+  email: "haris@edugrow.org",
 };
 
 export const navBarLinks: NavBarLink[] = [
@@ -24,10 +24,6 @@ export const navBarLinks: NavBarLink[] = [
     url: "/about",
   },
   {
-    title: "Projects",
-    url: "/projects",
-  },
-  {
     title: "Blog",
     url: "/blog",
   },
@@ -35,38 +31,47 @@ export const navBarLinks: NavBarLink[] = [
 
 export const socialLinks: SocialLink[] = [
   {
-    title: "GitHub",
-    url: "https://github.com/TimWitzdam",
-    icon: "mdi:github",
+    title: "YouTube",
+    url: "https://www.youtube.com/@haris.samingan",
+    icon: "mdi:youtube",
     external: true,
   },
   {
-    title: "Mail",
-    url: "mailto:tim@witzdam.com",
-    icon: "mdi:email",
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/haris-samingan",
+    icon: "mdi:linkedin",
+    external: true,
+  },
+  {
+    title: "Instagram",
+    url: "https://www.instagram.com/haris.samingan",
+    icon: "mdi:instagram",
+    external: true,
   },
 ];
+
 
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Tim Witzdam",
+    title: "Haris Samingan",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+    "I’m Haris Samingan, an entrepreneur in Singapore building a 6 figure business by end of 2025. Currently running EduGrow, where we help scale tuition and education businesses.",
     image: identity.logo,
   },
-  role: "Student & Software Developer",
+  role: "Entrepreneur",
   description:
-    "I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.",
+    "I’m Haris Samingan, an entrepreneur in Singapore 🇸🇬 building a 6 figure business by end of 2025. Currently running EduGrow, where we help scale tuition and education businesses.",
   socialLinks: socialLinks,
   links: [
     {
-      title: "My Projects",
-      url: "/projects",
-    },
-    {
       title: "About Me",
       url: "/about",
+    },
+    {
+      title: "EduGrow",
+      url: "https://edugrow.org",
+      external: true
     },
   ],
 };
@@ -74,52 +79,84 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Tim Witzdam",
+    title: "About | Haris Samingan",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+      "I’m Haris Samingan, an entrepreneur in Singapore 🇸🇬 building a 6 figure business by end of 2025. Currently running EduGrow, where we help scale tuition and education businesses.",
     image: identity.logo,
   },
-  subtitle: "Some information about myself",
+  subtitle: "Minimising regrets every day",
   about: {
-    description: `
-I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.
-<br/><br/>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque placeat est architecto tempora voluptatem sit suscipit aspernatur? <br/><br/>
-Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium consectetur nemo vero officia itaque.`, // Markdown is supported
+    description: `I’m Haris Samingan, an entrepreneur in Singapore 🇸🇬 building a 6 figure business by end of 2025. Currently running EduGrow, where we help scale tuition and education businesses.`, // Markdown is supported
     image_l: {
-      url: "/demo-1.jpg",
+      url: "/stock-1.jpg",
       alt: "Left Picture",
     },
     image_r: {
-      url: "/demo-1.jpg",
+      url: "/stock-2.jpg",
       alt: "Right Picture",
     },
   },
   work: {
-    description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
+    description: `Here is my career`, // Markdown is supported
     items: [
       {
-        title: "Software Developer",
+        title: "Founder",
         company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
+          name: "EduGrow.org",
+          image: "https://sg.getblood.com/cdn/shop/files/Red_Blood_Logo_280_x_80px_160x.png?v=1646192355",
+          url: "https://edugrow.org",
         },
-        date: "2021 - Present",
+        date: "2024 - Present",
       },
       {
-        title: "Software Developer",
+        title: "Head of Operations",
         company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
+          name: "Sigma School",
+          image: "https://sg.getblood.com/cdn/shop/files/Red_Blood_Logo_280_x_80px_160x.png?v=1646192355",
+          url: "#home",
+        },
+        date: "2023 - 2024",
+      },
+      {
+        title: "Founder",
+        company: {
+          name: "Next Level Academy (Failed)",
+          image: "https://sg.getblood.com/cdn/shop/files/Red_Blood_Logo_280_x_80px_160x.png?v=1646192355",
+          url: "#home",
+        },
+        date: "2022 - 2023",
+      },
+      {
+        title: "Co-Founder",
+        company: {
+          name: "Zenith Coding Academy (Failed)",
+          image: "https://sg.getblood.com/cdn/shop/files/Red_Blood_Logo_280_x_80px_160x.png?v=1646192355",
+          url: "#home",
+        },
+        date: "2021 - 2022",
+      },
+      {
+        title: "Founder",
+        company: {
+          name: "Learn Flutter Code (Failed)",
+          image: "https://sg.getblood.com/cdn/shop/files/Red_Blood_Logo_280_x_80px_160x.png?v=1646192355",
+          url: "#home",
         },
         date: "2019 - 2021",
       },
+      {
+        title: "Software Developer",
+        company: {
+          name: "Blood",
+          image: "https://sg.getblood.com/cdn/shop/files/Red_Blood_Logo_280_x_80px_160x.png?v=1646192355",
+          url: "https://sg.getblood.com/",
+        },
+        date: "2018 - 2019",
+      },
     ],
-  },
+  },    
   connect: {
-    description: `I'm always interested in meeting new people and learning new things. Feel free to connect with me on any of the following platforms.`, // Markdown is supported
+    description: `Feel free to connect with me on any of the following platforms.`, // Markdown is supported
     links: socialLinks,
   },
 };
@@ -127,7 +164,7 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
 // Projects (/projects)
 export const projectsPageContent: ProjectPageContent = {
   seo: {
-    title: "Projects | Tim Witzdam",
+    title: "Projects | Haris Samingan",
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
@@ -160,7 +197,7 @@ export const projectsPageContent: ProjectPageContent = {
 // Blog (/blog)
 export const blogPageContent: BlogPageContent = {
   seo: {
-    title: "Blog | Tim Witzdam",
+    title: "Blog | Haris Samingan",
     description: "Thoughts, stories and ideas.",
     image: identity.logo,
   },
